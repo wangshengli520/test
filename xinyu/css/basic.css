@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* CSS Document */
+
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,blockquote,p,body{
+padding:0;margin:0;}
+ul,li{list-style:none;}
+img{border:0 none;}
+a{ text-decoration:none; color:#666666; font-family:"微软雅黑";}
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:both;display:inline;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: normal;}
+body{ font-family:"微软雅黑"; font-size:14px; color:#595959; line-height:24px; min-width: 1200px;}
+
+.w1200{ width:1200px; margin:0 auto;}
+.clearfix:after { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0;} 
+.clearfix { zoom:1;}
+/*新闻*/
+.news li{ overflow: hidden; border-bottom:1px dashed #666; padding-bottom:5px; height:38px;
+line-height:38px;padding-top:5px;}
+.news li a{font-size:14px; color:#000; }
+.newstitle {
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.news_message{
+	height:30px;
+	line-height:30px;
+	text-align:center;	
+}
+
+/*分页*/
+.pager{margin-top:40px; margin-bottom:42px; overflow:hidden;  text-align:center;}
+.pager span a{ font-size:14px; display:inline-block; margin-left:5px;
+ color:#666666; line-height:25px; margin-right:5px; background:#d8d8d8;
+ width: 25px;
+ height: 25px;
+}
+.pager span a:hover{background:#bc0d0d; color:#ffffff;}
+.pager span a.on{background:#bc0d0d;color:#ffffff;}
+.pager span:first-child a{ width:43px; background:none; color:#666666;  }
+.pager span:last-child a{width:43px; background:none;color:#666666;  }
+
+
+/**/
+@keyframes snow{
+	0% {
+		background-position: 0 0, 0 0;
+	}
+	100% {
+		background-position: 500px 500px, 1000px 500px;
+	}
+}
+
+#snowMask {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background:url(../img/snow1.png),url(../img/snow2.png);
+	animation: 10s snow linear infinite;
+	pointer-events: none;
+}
